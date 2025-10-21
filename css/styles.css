@@ -253,9 +253,6 @@ img {
   margin-bottom: 8px;
 }
 
-.benefits-desc {
-}
-
 .benefits-icon-container {
   display: flex;
   justify-content: center;
@@ -326,9 +323,6 @@ img {
   justify-content: center;
   align-items: center;
   gap: 24px;
-}
-
-.team-social-item {
 }
 
 .team-social-link {
@@ -480,9 +474,6 @@ footer .container {
   gap: 16px;
 }
 
-.footer-social-item {
-}
-
 .footer-info-wrapper {
   margin-right: 120px;
 }
@@ -533,6 +524,9 @@ footer .container {
 }
 
 .subscribe-form {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
 }
 
 .subscribe-input {
