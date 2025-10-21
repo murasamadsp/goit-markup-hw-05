@@ -325,6 +325,10 @@ img {
   gap: 24px;
 }
 
+.team-social-item {
+  display: flex;
+}
+
 .team-social-link {
   display: flex;
   justify-content: center;
@@ -343,6 +347,7 @@ img {
 }
 
 .team-social-icon {
+  fill: #f4f4fd;
   width: 16px;
   height: 16px;
 }
@@ -474,6 +479,10 @@ footer .container {
   gap: 16px;
 }
 
+.footer-social-item {
+  display: flex;
+}
+
 .footer-info-wrapper {
   margin-right: 120px;
 }
@@ -496,6 +505,8 @@ footer .container {
 
 .footer-social-icon {
   fill: #f4f4fd;
+  width: 24px;
+  height: 24px;
 }
 
 .footer-icon-list {
@@ -546,6 +557,14 @@ footer .container {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 12px;
+}
+
+.subscribe-input:hover,
+.subscribe-input:focus {
+  border-color: #4d5ae5;
 }
 
 .subscribe-button {
