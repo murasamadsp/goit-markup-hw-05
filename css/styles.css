@@ -519,13 +519,14 @@ footer .container {
 .subscribe-title {
   color: #fff;
   font-weight: 500;
+  line-height: 1.5;
   margin-bottom: 16px;
   letter-spacing: 0.02em;
 }
 
 .subscribe-form {
   display: flex;
-  flex-direction: row;
+
   gap: 24px;
 }
 
