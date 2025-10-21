@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Global styles and resets
-   ========================================================================== */
+/* #region Global */
 
 body {
   background-color: #fff;
@@ -59,11 +57,9 @@ img {
 
 /* #endregion Global */
 
-/* ==========================================================================
-   Header section with navigation and contact information
-   ========================================================================== */
+/* #region - Header - */
 
-/* Navigation bar with logo and menu items */
+/* #region Navigation */
 .header {
   /* border-bottom: 1px solid #e7e9fc; */
   box-shadow: 0px 2px 1px rgb(46 47 66 / 0.08), 0px 1px 1px rgb(46 47 66 / 0.16),
@@ -155,7 +151,7 @@ img {
 
 /* #endregion Navigation */
 
-/* Contact information in header */
+/* #region Contacts */
 .contacts {
   font-style: normal;
 }
@@ -181,11 +177,9 @@ img {
 
 /* #endregion Header */
 
-/* ==========================================================================
-   Main content sections (Hero, Benefits, Team, Portfolio)
-   ========================================================================== */
+/* #region - Main - */
 
-/* Hero section with background image and call-to-action */
+/* #region Hero */
 
 .hero {
   background-color: #2e2f42;
@@ -246,7 +240,7 @@ img {
 }
 /* #endregion Hero */
 
-/* Benefits section with icons and descriptions */
+/* #region Benefits */
 
 .benefits-list {
   display: flex;
@@ -287,7 +281,7 @@ img {
 
 /* #endregion Benefits */
 
-/* Team members showcase with social links */
+/* #region Team */
 
 .team {
   background-color: #f4f4fd;
@@ -371,7 +365,7 @@ img {
 
 /* #endregion Team */
 
-/* Portfolio gallery with hover effects */
+/* #region Portfolio */
 
 .portfolio-heading {
   color: #2e2f42;
@@ -443,9 +437,7 @@ img {
 
 /* #endregion Main */
 
-/* ==========================================================================
-   Footer with social links and subscription form
-   ========================================================================== */
+/* #region - Footer - */
 
 footer .container {
   display: flex;
@@ -537,7 +529,7 @@ footer .container {
   fill: #f4f4fd;
 }
 
-/* Email subscription form */
+/* #region Subscribe */
 .subscribe-wrapper {
   display: flex;
   flex-direction: column;
@@ -619,9 +611,7 @@ footer .container {
 
 /* #endregion Footer */
 
-/* ==========================================================================
-   Modal dialog for contact form
-   ========================================================================== */
+/* #region Modal */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -635,7 +625,7 @@ footer .container {
   align-items: center;
   background-color: rgb(46 47 66 / 0.4);
 
-  opacity: 0;
+  opacity: 1;
   pointer-events: none;
   transition: opacity 250ms ease-in-out;
 
@@ -652,9 +642,12 @@ footer .container {
   background-color: #fff;
   border-radius: 4px;
   padding: 24px;
-  max-width: 480px;
-  max-height: 80%;
-  overflow-y: auto;
+  max-width: 408px;
+  min-height: 584px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal-title {
@@ -672,9 +665,10 @@ footer .container {
 }
 
 .modal-icon {
-  width: 24px;
-  height: 24px;
+  width: 8px;
+  height: 8px;
 
+  margin-bottom: 24px;
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
