@@ -562,6 +562,10 @@ footer .container {
   font-size: 12px;
 }
 
+.subscribe-input::placeholder {
+  color: #ffffff;
+}
+
 .subscribe-input:hover,
 .subscribe-input:focus {
   border-color: #4d5ae5;
