@@ -555,7 +555,7 @@ footer .container {
   background-color: transparent;
   color: #fff;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 2;
   letter-spacing: 0.04em;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -572,11 +572,11 @@ footer .container {
 }
 
 .subscribe-button {
+  min-width: 165px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   padding: 8px 24px 8px 24px;
   border-radius: 4px;
   border: none;
@@ -586,12 +586,14 @@ footer .container {
   letter-spacing: 0.04em;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   line-height: 1.5;
 }
 
 .subscribe-icon {
   width: 24px;
   height: 24px;
   fill: #ffffff;
+  margin-left: 16px;
 }
 
 /* #endregion Subscribe */
