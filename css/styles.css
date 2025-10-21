@@ -509,7 +509,6 @@ footer .container {
 
 /* #region Subscribe */
 .subscribe-wrapper {
-  /* margin-left: auto; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -517,8 +516,9 @@ footer .container {
 }
 
 .subscribe-title {
-  color: #fff;
+  color: #ffffff;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 16px;
   letter-spacing: 0.02em;
@@ -526,8 +526,12 @@ footer .container {
 
 .subscribe-form {
   display: flex;
-
   gap: 24px;
+}
+
+.subscribe-label {
+  display: flex;
+  flex-direction: column;
 }
 
 .subscribe-input {
