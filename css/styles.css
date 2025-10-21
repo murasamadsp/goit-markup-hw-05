@@ -425,39 +425,6 @@ img {
 
 /* #endregion Portfolio */
 
-/* #region Modal */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 250ms ease-in-out;
-}
-
-.modal-overlay.is-open {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.modal {
-  background-color: #fff;
-  border-radius: 4px;
-  padding: 24px;
-  max-width: 480px;
-  max-height: 80%;
-  overflow-y: auto;
-}
-
 /* #endregion Main */
 
 /* #region - Footer - */
@@ -466,7 +433,6 @@ footer .container {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  /* gap: 120px; */
 }
 
 .footer {
@@ -495,10 +461,10 @@ footer .container {
   color: #f4f4fd;
   font-size: 16px;
   max-width: 264px;
-  /* letter-spacing: 0.02em; */
 }
 
 .footer-social-wrapper {
+  margin-right: 80px;
 }
 
 .footer-social-title {
@@ -517,7 +483,7 @@ footer .container {
 .footer-social-item {
 }
 
-.footer-info {
+.footer-info-wrapper {
   margin-right: 120px;
 }
 
@@ -549,4 +515,177 @@ footer .container {
 .footer-icon {
   fill: #f4f4fd;
 }
+
+/* #region Subscribe */
+.subscribe-wrapper {
+  /* margin-left: auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.subscribe-title {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 16px;
+  letter-spacing: 0.02em;
+}
+
+.subscribe-form {
+
+}
+
+.subscribe-input {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.subscribe-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.subscribe-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* #endregion Subscribe */
+
 /* #endregion Footer */
+
+/* #region Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(46, 47, 66, 0.4);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms ease-in-out;
+}
+
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 24px;
+  max-width: 480px;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+.modal-title {
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal-icon {
+  width: 24px;
+  height: 24px;
+
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button {
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  background-color: #404bbf;
+}
+
+.modal-button:focus-visible {
+  outline: 2px solid #404bbf;
+  outline-offset: 2px;
+}
+
+.modal-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.modal-checkbox {
+  width: 16px;
+  height: 16px;
+}
+
+.modal-checkbox-label {
+  font-size: 16px;
+  color: #8e8f99;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-checkbox-label a {
+  color: #4d5ae5;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-checkbox-label a:hover,
+.modal-checkbox-label a:focus {
+  color: #404bbf;
+}
+
+.modal-checkbox-label a:hover::after,
+.modal-checkbox-label a:focus::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* #endregion Modal */

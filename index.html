@@ -369,7 +369,7 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <div class="footer-info">
+        <div class="footer-info-wrapper">
           <a class="footer-logo" href="./index.html">Web<span class="footer-logo-accent">Studio</span>
           </a>
           <p class="footer-desc">
@@ -410,15 +410,50 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-wrapper">
+          <p class="subscribe-title">Subscribe</p>
+          <form class="subscribe-form">
+            <input name="email" type="email" placeholder="E-mail" required>
+            <button type="submit">Subscribe
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <!-- Modal -->
     <div class="modal-overlay">
       <div class="modal">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p> 
+          
+          <svg class="modal-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+          <h2 class="modal-title">Leave your contacts and we will call you back</h2>
+          <form class="modal-form">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+            
+            <label for="message">Comment</label>
+            <input id="message" name="message" type="text">
+
+            <div class="modal-checkbox-wrapper">
+              <input id="checkbox" name="checkbox" type="checkbox" required>
+              <label for="checkbox">I accept the terms and conditions of the <a href="#">Privacy Policy</a></label>
+            </div>
+
+            <div class="modal-button-wrapper">
+              <button class="modal-button" type="submit">Send</button>
+            </div>
+          </form>
       </div>
      
     </div>
