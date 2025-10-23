@@ -85,9 +85,7 @@ img {
 .header {
   /* Visual */
   /* border-bottom: 1px solid #e7e9fc; */
-  box-shadow:
-    0 2px 1px rgb(46 47 66 / 0.08),
-    0 1px 1px rgb(46 47 66 / 0.16),
+  box-shadow: 0 2px 1px rgb(46 47 66 / 0.08), 0 1px 1px rgb(46 47 66 / 0.16),
     0 1px 6px rgb(46 47 66 / 0.08);
 }
 
@@ -249,8 +247,7 @@ img {
 
   /* Visual */
   background-color: #2e2f42;
-  background-image:
-    linear-gradient(rgb(46 47 66 / 0.7), rgb(46 47 66 / 0.7)),
+  background-image: linear-gradient(rgb(46 47 66 / 0.7), rgb(46 47 66 / 0.7)),
     url(../images/hero/hero-background.jpg);
   background-size: cover;
   background-position: center;
@@ -406,9 +403,7 @@ img {
   /* Visual */
   background-color: #fff;
   border-radius: 0 0 4px 4px;
-  box-shadow:
-    0 1px 6px rgb(46 47 66 / 0.08),
-    0 1px 1px rgb(46 47 66 / 0.16),
+  box-shadow: 0 1px 6px rgb(46 47 66 / 0.08), 0 1px 1px rgb(46 47 66 / 0.16),
     0 2px 1px rgb(46 47 66 / 0.08);
 
   /* Misc */
@@ -570,9 +565,7 @@ img {
 .portfolio-item:hover,
 .portfolio-item:focus {
   /* Visual */
-  box-shadow:
-    0 1px 6px rgb(46 47 66 / 0.08),
-    0 1px 1px rgb(46 47 66 / 0.16),
+  box-shadow: 0 1px 6px rgb(46 47 66 / 0.08), 0 1px 1px rgb(46 47 66 / 0.16),
     0 2px 1px rgb(46 47 66 / 0.08);
 }
 
@@ -711,8 +704,8 @@ footer .container {
   fill: #f4f4fd;
 }
 
-/* #region Subscribe */
-.subscribe-wrapper {
+/* #region Footer Form */
+.footer-form-wrapper {
   /* Box model */
   display: flex;
 
@@ -722,7 +715,7 @@ footer .container {
   justify-content: flex-start;
 }
 
-.subscribe-title {
+.footer-form-title {
   /* Box model */
   margin-bottom: 16px;
 
@@ -734,16 +727,16 @@ footer .container {
   letter-spacing: 0.02em;
 }
 
-.subscribe-form {
+.footer-form {
+  /* Positioning */
+  margin-left: auto;
+
   /* Box model */
   display: flex;
   gap: 24px;
-
-  /* Positioning */
-  margin-left: auto;
 }
 
-.subscribe-field {
+.footer-form-label {
   /* Box model */
   display: flex;
 
@@ -751,28 +744,14 @@ footer .container {
   flex-direction: column;
 }
 
-.subscribe-label {
-  /* Typography */
-  color: #fff;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
-  margin-bottom: 4px;
-}
-
-.subscribe-input-wrapper {
-  /* Positioning */
-  position: relative;
-}
-
-.subscribe-input {
+.footer-form-input {
   /* Box model */
   width: 264px;
   height: 40px;
-  padding: 8px 16px;
+  padding-left: 16px;
 
   /* Typography */
-  color: #fff;
+  color: #ffffff;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
@@ -788,32 +767,33 @@ footer .container {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe-input::placeholder {
+.footer-form-input::placeholder {
   /* Typography */
   color: #ffffff;
 }
 
-.subscribe-input:hover,
-.subscribe-input:focus {
+.footer-form-input:hover,
+.footer-form-input:focus {
   /* Visual */
   border-color: #4d5ae5;
 }
 
-.subscribe-button {
+.footer-form-button {
   /* Box model */
   min-width: 165px;
+  height: 40px;
   display: flex;
-  padding: 8px 24px;
-  line-height: 1.5;
 
   /* Positioning */
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 
   /* Typography */
-  color: #fff;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
   font-weight: 500;
+  line-height: 1.5;
   letter-spacing: 0.04em;
 
   /* Visual */
@@ -826,12 +806,21 @@ footer .container {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe-icon {
-  /* Positioning */
-  position: absolute;
-  top: 50%;
-  right: 16px;
-  transform: translateY(-50%);
+.footer-form-button:hover,
+.footer-form-button:focus {
+  /* Visual */
+  background-color: #404bbf;
+}
+
+.footer-form-button:focus-visible {
+  /* Visual */
+  outline: 2px solid #404bbf;
+  outline-offset: 2px;
+}
+
+.footer-form-icon {
+  /* Box model */
+  margin-left: 16px;
 
   /* Box model */
   width: 24px;
@@ -839,12 +828,9 @@ footer .container {
 
   /* Visual */
   fill: #ffffff;
-
-  /* Misc */
-  pointer-events: none;
 }
 
-/* #endregion Subscribe */
+/* #endregion Footer Form */
 
 /* #endregion Footer */
 
@@ -872,8 +858,7 @@ footer .container {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition:
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -898,9 +883,7 @@ footer .container {
   /* Visual */
   background: #fcfcfc;
   border-radius: 4px;
-  box-shadow:
-    0 1px 1px rgb(0 0 0 / 14%),
-    0 2px 1px rgb(0 0 0 / 20%),
+  box-shadow: 0 1px 1px rgb(0 0 0 / 14%), 0 2px 1px rgb(0 0 0 / 20%),
     0 1px 3px rgb(0 0 0 / 12%);
 
   /* Misc */
@@ -1138,8 +1121,7 @@ footer .container {
 
   /* Misc */
   flex-shrink: 0;
-  transition:
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
