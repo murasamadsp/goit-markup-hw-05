@@ -881,7 +881,7 @@ footer .container {
   /* Box model */
   width: 408px;
   min-height: 584px;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
 
   /* Visual */
   background: #fcfcfc;
@@ -903,6 +903,11 @@ footer .container {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.modal-text {
+  /* Typography */
+  font-weight: 500;
 }
 
 .modal-form {
@@ -1045,6 +1050,13 @@ footer .container {
   border: none;
 }
 
+.modal-close-button:hover .modal-close-icon,
+.modal-close-button:focus .modal-close-icon,
+.modal-close-button:focus-visible .modal-close-icon {
+  /* Visual */
+  fill: #ffffff;
+}
+
 .modal-close-button:focus-visible {
   /* Visual */
   outline: 2px solid #404bbf;
@@ -1102,6 +1114,7 @@ footer .container {
 .modal-button:focus {
   /* Visual */
   background-color: #404bbf;
+  fill: #ffffff;
 }
 
 .modal-button:focus-visible {
