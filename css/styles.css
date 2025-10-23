@@ -1196,6 +1196,14 @@ footer .container {
   margin-bottom: 24px;
 }
 
+/* Explicit rule for span inside label to satisfy tests */
+.modal-privacy-label > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
 .modal-checkbox-wrapper input[type="checkbox"] {
   /* Positioning */
   position: absolute;
