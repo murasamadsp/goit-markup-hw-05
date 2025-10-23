@@ -1143,19 +1143,22 @@ footer .container {
   margin: 0 auto;
 
   /* Typography */
-  color: var(--color-white);
-  font-weight: var(--fw-medium);
-  letter-spacing: var(--ls-l);
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 
   /* Visual */
   border: none;
   border-radius: var(--radius-s);
-  background-color: var(--color-iris);
+  background-color: #4d5ae5;
   box-shadow: var(--shadow-btn);
   cursor: pointer;
 
   /* Misc */
-  transition: background-color var(--transition-base);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button-wrapper {
@@ -1220,8 +1223,9 @@ footer .container {
 
   /* Misc */
   flex-shrink: 0;
-  transition: background-color var(--transition-base),
-    border var(--transition-base), fill var(--transition-base);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox-mark {
