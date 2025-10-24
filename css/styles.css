@@ -1132,6 +1132,7 @@ footer .container {
   /* Misc */
   pointer-events: none;
   transition: fill var(--transition-base);
+  fill: var(--color-navy-blue);
 }
 
 .modal-button {
@@ -1196,15 +1197,7 @@ footer .container {
   margin-bottom: 24px;
 }
 
-/* Explicit rule for span inside label to satisfy tests */
-.modal-privacy-label > span {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  fill: transparent;
-}
-
-.modal-checkbox-wrapper input[type="checkbox"] {
+.modal-checkbox-wrapper .modal-checkbox {
   /* Positioning */
   position: absolute;
 
@@ -1218,7 +1211,6 @@ footer .container {
   display: inline-flex;
   width: 16px;
   height: 16px;
-  margin-right: 8px;
 
   /* Positioning */
   align-items: center;
@@ -1244,14 +1236,17 @@ footer .container {
   transition: fill var(--transition-base);
 }
 
-input:checked + label > .modal-checkbox-indicator {
+.modal-checkbox:checked + .modal-privacy-label > .modal-checkbox-indicator {
   /* Visual */
   background-color: var(--color-ocean);
   border: none;
   fill: var(--color-cloud);
 }
 
-input:checked + label > .modal-checkbox-indicator > .modal-checkbox-mark {
+.modal-checkbox:checked
+  + .modal-privacy-label
+  > .modal-checkbox-indicator
+  > .modal-checkbox-mark {
   /* Visual */
   fill: var(--color-cloud);
 }
@@ -1262,10 +1257,10 @@ input:checked + label > .modal-checkbox-indicator > .modal-checkbox-mark {
   height: 16px;
 }
 
-.modal-checkbox-wrapper label {
+.modal-privacy-label {
   /* Positioning */
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 
   /* Box model */
   gap: 8px;
@@ -1282,7 +1277,7 @@ input:checked + label > .modal-checkbox-indicator > .modal-checkbox-mark {
   transition: color var(--transition-base);
 }
 
-.modal-checkbox-wrapper label a {
+.modal-privacy-label .modal-privacy-link {
   /* Typography */
   color: var(--color-iris);
   text-decoration: underline;
@@ -1291,8 +1286,8 @@ input:checked + label > .modal-checkbox-indicator > .modal-checkbox-mark {
   transition: color var(--transition-base);
 }
 
-.modal-checkbox-wrapper label a:hover,
-.modal-checkbox-wrapper label a:focus {
+.modal-privacy-label .modal-privacy-link:hover,
+.modal-privacy-label .modal-privacy-link:focus {
   /* Typography */
   color: var(--color-ocean);
 }
