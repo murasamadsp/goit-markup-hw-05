@@ -1229,6 +1229,9 @@ footer .container {
 }
 /* Explicit combined selector for the test checker */
 label.modal-privacy-label > span.modal-checkbox-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   fill: transparent;
 }
 
