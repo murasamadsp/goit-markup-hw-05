@@ -1189,7 +1189,7 @@ footer .container {
 
 .modal-checkbox-wrapper {
   /* Positioning */
-  display: inline-flex;
+  display: flex;
   align-items: flex-start;
 
   /* Box model */
@@ -1229,9 +1229,6 @@ footer .container {
 }
 /* Explicit combined selector for the test checker */
 label.modal-privacy-label > span.modal-checkbox-indicator {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   fill: transparent;
 }
 
