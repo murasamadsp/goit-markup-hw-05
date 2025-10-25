@@ -900,13 +900,14 @@ footer .container {
   align-items: center;
 
   /* Visual */
-  background-color: var(--overlay-bg);
+  background-color: rgba(46, 47, 66, 0.4);
 
   /* Misc */
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity var(--transition-base), visibility var(--transition-base);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay.is-open {
@@ -935,7 +936,7 @@ footer .container {
 
   /* Misc */
   transform: translate(-50%, -50%);
-  transition: transform var(--transition-base);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-title {
@@ -1068,7 +1069,7 @@ footer .container {
 
   /* Misc */
   pointer-events: none;
-  transition: fill var(--transition-base);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:focus + .modal-input-icon {
@@ -1097,8 +1098,8 @@ footer .container {
 
   /* Misc */
   cursor: pointer;
-  transition: background-color var(--transition-base),
-    border var(--transition-base);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button:hover,
@@ -1227,20 +1228,13 @@ footer .container {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* Explicit combined selector for the test checker */
-label.modal-privacy-label > span.modal-checkbox-indicator {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  fill: transparent;
-}
 
 .modal-checkbox-mark {
   /* Visual */
   fill: transparent;
 
   /* Misc */
-  transition: fill var(--transition-base);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox:checked + .modal-privacy-label > .modal-checkbox-indicator {
