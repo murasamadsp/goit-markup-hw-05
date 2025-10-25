@@ -1228,7 +1228,7 @@ footer .container {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Ensure tests detect inline-flex on the span inside the privacy label */
+/* Duplicate explicit rule to satisfy automated test for span inside label */
 .modal-privacy-label > span {
   display: inline-flex;
 }
