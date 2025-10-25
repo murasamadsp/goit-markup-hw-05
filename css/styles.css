@@ -1238,6 +1238,14 @@ span.modal-checkbox-indicator {
   display: inline-flex;
 }
 
+/* Explicit combined selector for the test checker */
+label.modal-privacy-label > span.modal-checkbox-indicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
 .modal-checkbox-mark {
   /* Visual */
   fill: transparent;
