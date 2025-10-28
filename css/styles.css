@@ -962,12 +962,6 @@ footer .container {
 }
 
 .modal-form {
-  /* Positioning */
-  display: flex;
-  flex-direction: column;
-
-  /* Box model */
-  gap: 16px;
 }
 
 .modal-field {
